@@ -1,6 +1,7 @@
-.user-details {
+
+/* .user-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 1rem;
 
@@ -16,7 +17,7 @@
 }
 
 .user-details img {
-  width: 100%;
+  width: 50%;
   max-width: 400px;
   margin-bottom: 1rem;
 
@@ -62,4 +63,4 @@
   .user-details-info p:first-of-type {
     font-size: 1rem;
   }
-}
+} */

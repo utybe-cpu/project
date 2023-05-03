@@ -56,7 +56,7 @@ const UserTable = () => {
 
   return (
     <div>
-      <h2>User List</h2>
+      <h2 className="title">User List</h2>
       <table>
         <thead>
           <tr>

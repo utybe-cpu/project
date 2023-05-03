@@ -87,8 +87,9 @@ table td:first-child {
 /* Style user details page */
 .user-details {
   display: flex;
-  flex-wrap: wrap;
-}
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+ }
 
 .user-details h1 {
   font-size: 24px;
@@ -271,7 +272,7 @@ table td:first-child {
   }
 
   .user-details p {
-    font-size: 3rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
