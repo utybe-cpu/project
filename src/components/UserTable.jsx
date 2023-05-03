@@ -3,6 +3,7 @@ import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import './UserTable.css'
 
 const UserTable = () => {
   const [users, setUsers] = useState([]);

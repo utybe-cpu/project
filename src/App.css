@@ -148,15 +148,15 @@ table td:first-child {
     justify-content: center;
   }
 
-  /* Set user details layout */
+ /* Set user details layout */
 .user-details {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 2rem auto;
-  width: 80%;
+  width: 90%;
 }
 
 .user-details img {
@@ -192,5 +192,96 @@ table td:first-child {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 576px) {
+  .user-details {
+    width: 80%;
+  }
 
+  .user-details img {
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem 0;
+  }
+
+  .user-details h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .user-details p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .user-details .info-row label {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .user-details .info-row span {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-details {
+    width: 60%;
+  }
+
+  .user-details img {
+    width: 20rem;
+    height: 20rem;
+    margin: 4rem 0;
+  }
+
+  .user-details h2 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .user-details p {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .user-details .info-row label {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .user-details .info-row span {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .user-details {
+    width: 50%;
+  }
+
+  .user-details img {
+    width: 25rem;
+    height: 25rem;
+    margin: 5rem 0;
+  }
+
+  .user-details h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-details p {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-details .info-row label {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+  }
+
+  .user-details .info-row span {
+    font-size: 4rem;
+  }
+}
 }
