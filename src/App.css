@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+/* Set font family and size */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Set background color */
+body {
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add padding to container */
+.container {
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #2d6e92;
+  color: #fff;
+  font-weight: 400;
+}
+
+table td:first-child {
+  font-weight: 600;
+}
+
+/* Style pagination */
+.pagination {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pagination li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.pagination li:last-child {
+  margin-right: 0;
+}
+
+.pagination a {
+  display: block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #2d6e92;
+  color: #2d6e92;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #2d6e92;
+  color: #fff;
+}
+
+.pagination .active a {
+  background-color: #2d6e92;
+  color: #fff;
+}
+
+/* Style user details page */
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-details h1 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.user-details .user-info {
+  flex-basis: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.user-details .user-info h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2d6e92;
+}
+
+.user-details .user-info p {
+  margin: 0;
+}
+
+.user-details .user-info img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.user-details .user-info .label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.user-details .user-info .value {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Set container width */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Add margin to table */
+  table {
+    margin: 0 auto 20px;
   }
+
+  /* Center pagination */
+  .pagination {
+    justify-content: center;
+  }
+
+  /* Set user details layout */
+.user-details {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.user-details img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
+.user-details h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-details p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-details .info-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.user-details .info-row label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.user-details .info-row span {
+  font-size: 1.5rem;
+}
+
+
 }
