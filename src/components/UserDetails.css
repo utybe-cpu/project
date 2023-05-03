@@ -9,6 +9,10 @@
     justify-content: center;
     gap: 2rem;
   }
+
+  @media (max-width: 767px) {
+    padding: 0.5rem;
+  }
 }
 
 .user-details img {
@@ -18,6 +22,11 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -46,5 +55,11 @@
 @media (min-width: 768px) {
   .user-details-info p:first-of-type {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .user-details-info p:first-of-type {
+    font-size: 1rem;
   }
 }
